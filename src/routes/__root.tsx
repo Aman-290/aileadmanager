@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
 import { Sidebar } from "@/components/brokai/Sidebar";
+import { VoiceAgentWidget } from "@/components/brokai/VoiceAgentWidget";
 import { CalendarProvider } from "@/lib/calendarStore";
 import { GoogleCalendarMock } from "@/components/brokai/GoogleCalendarMock";
 import { useState, useEffect } from "react";
@@ -99,6 +100,7 @@ function RootComponent() {
           </div>
         </div>
         <GoogleCalendarMock />
+        <VoiceAgentWidget />
         <Toaster position="bottom-right" />
       </CalendarProvider>
     </QueryClientProvider>
